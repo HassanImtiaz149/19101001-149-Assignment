@@ -111,9 +111,22 @@
     <!--Contact Area-->
     <section id="contact">
         <h1 class="headings">CONTACT</h1>
-        <form action=" " class="form">
-            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+        <form action="Setformdata" method="post" class="form">
+            <input type="text" name="fname" class="input" placeholder="Enter Your First Name">
+            <input type="text" name="lname" class="input" placeholder="Enter Your Last Name">
             <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <input type="tel" name="tel" class="input" placeholder="Enter Your Contact No" />
+            <h1 class="headings">Select Your Gender</h1>
+            <input type="radio" id="male" name="gen" value="MALE" />
+            <label for="male">MALE</label><br />
+            <input type="radio" id="female" name="gen" value="FEMALE" />
+            <label for="female">MALE</label><br />
+            <label for="department"> Choose a department:</label>
+            <select name="department" id="department">
+                <option value="sales">SALES</option>
+                <option value="it">IT</option>
+            </select>
+
             <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
             <input type="submit" value="SEND" id="send">
         </form>
